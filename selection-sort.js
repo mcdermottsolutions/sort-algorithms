@@ -1,9 +1,7 @@
-let arr = [2,1,3,8,5];
-
-function selectionSort(list) {
-  for (let i=0; i<arr.length; i++) {
+module.exports = (list) => {
+  for (let i=0; i<list.length; i++) {
     let j=i;
-    for (let k=i+1; k<arr.length; k++) {
+    for (let k=i+1; k<list.length; k++) {
       if (list[k] < list[j]) {
         j=k;
       }
@@ -14,5 +12,3 @@ function selectionSort(list) {
   }
   return list;
 }
-
-console.log(selectionSort(arr));

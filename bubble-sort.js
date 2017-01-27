@@ -1,7 +1,5 @@
-let arr = [2,1,3,8,5];
-
-function bubbleSort(list) {
-  let len = arr.length;
+module.exports = (list) => {
+  let len = list.length;
   for (let i=0; i<len; i++) {
     let swapped = false;
     for (let j=len; j>i; j--) {
@@ -16,5 +14,3 @@ function bubbleSort(list) {
   }
   return list;
 }
-
-console.log(bubbleSort(arr));
