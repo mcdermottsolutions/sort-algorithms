@@ -16,10 +16,10 @@ for i = 2:n
 This one makes two assignments each time it pushes the number down, but it doesn't have to.
 ```
 for i = 2:n
-  temp = i
+  temp = a[i]
   for (j=i; j>1 and (a[j] < a[j-1]); j--)
     a[j] = a[j-1]
-  a[j] = a[i]
+  a[j] = temp
 ```
 Insertion sort works it's way up the list and when it finds a number that's too low, it pushes it down to where it should be and then keeps working up the list
 
