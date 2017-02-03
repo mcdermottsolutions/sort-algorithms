@@ -8,12 +8,13 @@ Been learning the algorithms on https://www.toptal.com/developers/sorting-algori
 The psuedocode at the toptal site is a little weird, so here are my modified versions.  The notes are pulled mostly from the Toptal site and wikipedia.
 
 ### Insertion Sort
+Basic Insertion Sort (inefficient)
 ```
 for i = 2:n
   for (j=i; j>1 and (a[j] < a[j-1]); j--)
     swap a[j,j-1]
 ```
-This one makes two assignments each time it pushes the number down, but it doesn't have to.
+Slightly optimized Insertion Sort
 ```
 for i = 2:n
   temp = a[i]
