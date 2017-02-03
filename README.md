@@ -16,7 +16,7 @@ for i = 2:n
 This one makes two assignments each time it pushes the number down, but it doesn't have to.
 ```
 for i = 2:n
-  temp = a[i]
+  temp = i
   for (j=i; j>1 and (a[j] < a[j-1]); j--)
     a[j] = a[j-1]
   a[j] = a[i]
