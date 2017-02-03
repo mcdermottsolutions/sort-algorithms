@@ -18,7 +18,8 @@ Slightly optimized Insertion Sort
 ```
 for i = 2:n
   temp = a[i]
-  for (j=i; j>1 and (a[j] < a[j-1]); j--)
+  j=i;
+  for (j>1 and (a[j] < a[j-1]); j--)
     a[j] = a[j-1]
   a[j] = temp
 ```
