@@ -33,7 +33,7 @@ Quirks of insertion sort:
 for i = 1:n
   low = i
   for j = i+1:n
-    if [j] < a[low]
+    if a[j] < a[low]
       low = j
   swap a[i,low]
 ```
