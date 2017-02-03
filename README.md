@@ -44,3 +44,16 @@ Select sort finds the lowest number in the list and puts it in spot #1, then it 
 Quirks of selection sort:
 - it's O(n²), so it's pretty bad
 - it only does n swaps, so it's decent to use if the cost of swaps is high for some reason
+
+### Bubble Sort
+```
+for i = 1:n
+	swapped = false
+	for j = n:i+1
+		if (a[j] < a[j-1])
+			swap a[j,j-1]
+			swapped = true
+		if (!swapped)
+			break;
+```
+Bubble sort has an ascending outer loop, a boolean swapped variable and a descending inner loop.  The counter on the inner loop starts at the outer loop counter plus one because bubble sort swaps happen on the inner loop counter index and one element left of the counter.  The inner loop descends as long as the value left of the counter is greater than the counter and it will swap at each spot, if so.  With each increment of i, a[1..i] is properly sorted. 
