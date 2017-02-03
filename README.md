@@ -57,3 +57,6 @@ for i = 1:n
 			break;
 ```
 Bubble sort has an ascending outer loop, a boolean swapped variable and a descending inner loop.  The counter on the inner loop starts at the outer loop counter plus one because bubble sort swaps happen on the inner loop counter index and one element left of the counter.  The inner loop descends as long as the value left of the counter is greater than the counter and it will swap at each spot, if so.  With each increment of i, a[1..i] is properly sorted. 
+
+Quirks of bubble sort
+- it's O(n²), so it's pretty bad
